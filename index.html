@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gioco di Colori — Pinacoteca di Brera</title>
+  <meta name="description" content="Un'avventura tra arte, natura e colori per le scuole medie. Pinacoteca di Brera, Milano.">
+  <meta name="theme-color" content="#8A0253">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicon.png" type="image/png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gioco di Colori — Pinacoteca di Brera">
+  <meta property="og:description" content="Un'avventura tra arte, natura e colori per le scuole medie. Pinacoteca di Brera, Milano.">
+  <meta property="og:image" content="assets/img/tavola1-hero.webp">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gioco di Colori — Pinacoteca di Brera">
+  <meta name="twitter:description" content="Un'avventura tra arte, natura e colori per le scuole medie. Pinacoteca di Brera, Milano.">
+  <meta name="twitter:image" content="assets/img/tavola1-hero.webp">
+
+  <!-- Fonts (DM Sans from Google; Gravitas One + Stardos Stencil loaded via @font-face in CSS) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ============================================
+       NAV
+       ============================================ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">
+        <img src="assets/img/mano-colorata-sm.webp" alt="Gioco di Colori" width="28" height="28">
+        <span class="nav__brand">Gioco di Colori</span>
+      </a>
+      <div class="nav__links" id="nav-links">
+        <a href="#about">Il Progetto</a>
+        <a href="#percorso">Percorso</a>
+        <a href="#ar">Esperienza AR</a>
+        <a href="#campagna">Campagna</a>
+        <a href="#faq">FAQ</a>
+        <a href="#prenota" class="nav__mobile-cta">Prenota la Visita</a>
+      </div>
+      <a href="#prenota" class="nav__cta">Prenota</a>
+      <button class="nav__hamburger" id="nav-toggle" aria-label="Apri menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       HERO
+       ============================================ -->
+  <header class="hero" id="hero">
+    <img src="assets/img/tavola1-hero.webp" alt="Gioco di Colori — Internazionale Kids e Pinacoteca di Brera" class="hero__image">
+    <div class="hero__scroll">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1"/><line x1="8" y1="5" x2="8" y2="10" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg>
+      <span>Scorri per esplorare</span>
+    </div>
+  </header>
+
+  <!-- ============================================
+       ABOUT (Il Progetto — overview)
+       ============================================ -->
+  <section class="section" id="about">
+    <div class="section__header">
+      <div class="section__pill">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="3" fill="currentColor"/></svg>
+        <span>Il Progetto</span>
+      </div>
+      <h2 class="section__title anim-split">
+        <span class="t-white">Da un seme nasce un colore,</span>
+        <span class="t-dim">da un colore nasce un'opera d'arte.</span>
+      </h2>
+    </div>
+    <div class="about-intro anim-up">
+      <p class="about-intro__text">Gioco di Colori e un progetto educativo nato dalla collaborazione tra <strong>Internazionale Kids</strong> e la <strong>Pinacoteca di Brera</strong>. Un percorso che unisce arte, botanica e sostenibilita, pensato per le scuole medie di Milano. I ragazzi adottano una pianta di amaranto nell'Orto Botanico di Brera, ne estraggono il pigmento naturale, e lo usano per creare la propria opera d'arte — che potra essere esposta nelle sale della Pinacoteca.</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PERCORSO (4 Polaroid images — alternating rows)
+       ============================================ -->
+  <section class="section" id="percorso">
+    <div class="section__header">
+      <div class="section__pill">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="3" fill="currentColor"/></svg>
+        <span>Il Percorso</span>
+      </div>
+      <h2 class="section__title anim-split">
+        <span class="t-white">Un seme da piantare,</span>
+        <span class="t-dim">quattro passi verso Brera.</span>
+      </h2>
+    </div>
+    <div class="about-rows">
+      <div class="about-row anim-up">
+        <div class="about-row__image">
+          <img src="assets/img/Polaroid1.webp" alt="Fase 1 — Coltiva la pianta di amaranto" loading="lazy">
+        </div>
+        <div class="about-row__text">
+          <h3 class="about-row__title">1 — Coltiva</h3>
+          <p class="about-row__desc">Prenditi cura della pianta di amaranto nell'Orto Botanico. Osservala crescere, impara i suoi segreti.</p>
+        </div>
+      </div>
+      <div class="about-row about-row--reverse anim-up" style="--delay: 0.1s">
+        <div class="about-row__image">
+          <img src="assets/img/Polaroid2.webp" alt="Fase 2 — Estrai il pigmento naturale" loading="lazy">
+        </div>
+        <div class="about-row__text">
+          <h3 class="about-row__title">2 — Estrai</h3>
+          <p class="about-row__desc">Dalla pianta nasce il colore. Estrai il pigmento naturale dall'amaranto e scopri la chimica dei colori.</p>
+        </div>
+      </div>
+      <div class="about-row anim-up" style="--delay: 0.2s">
+        <div class="about-row__image">
+          <img src="assets/img/Polaroid3.webp" alt="Fase 3 — Dipingi con i pigmenti naturali" loading="lazy">
+        </div>
+        <div class="about-row__text">
+          <h3 class="about-row__title">3 — Dipingi</h3>
+          <p class="about-row__desc">Crea la tua opera d'arte usando il colore che hai estratto. Esprimi la tua visione con i pigmenti della natura.</p>
+        </div>
+      </div>
+      <div class="about-row about-row--reverse anim-up" style="--delay: 0.3s">
+        <div class="about-row__image">
+          <img src="assets/img/Polaroid4.webp" alt="Fase 4 — Esponi alla Pinacoteca di Brera" loading="lazy">
+        </div>
+        <div class="about-row__text">
+          <h3 class="about-row__title">4 — Esponi</h3>
+          <p class="about-row__desc">Le opere vincitrici saranno esposte alla Pinacoteca di Brera. Il tuo dipinto in un museo vero.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       AR EXPERIENCE (Auto-advancing Carousel)
+       ============================================ -->
+  <section class="section" id="ar">
+    <div class="section__header">
+      <div class="section__pill">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="3" fill="currentColor"/></svg>
+        <span>Esperienza AR</span>
+      </div>
+      <h2 class="section__title anim-split">
+        <span class="t-white">E se potessi camminare</span>
+        <span class="t-dim">su una pianta di amaranto?</span>
+      </h2>
+    </div>
+    <div class="ar-carousel" id="ar-carousel">
+      <div class="ar-carousel__viewport">
+        <div class="ar-carousel__track">
+          <div class="ar-carousel__slide ar-carousel__slide--active">
+            <img src="assets/img/ar-1.webp" alt="Vista immersiva tra le foglie giganti dell'amaranto" loading="lazy">
+            <div class="ar-carousel__overlay">
+              <h3>Cammina tra le Foglie Giganti</h3>
+              <p>Con il visore AR diventi piccolo come una formica. Le foglie di amaranto diventano montagne verdi da esplorare.</p>
+            </div>
+          </div>
+          <div class="ar-carousel__slide">
+            <img src="assets/img/ar-2.webp" alt="Farfalla dorata tra i fiori di amaranto" loading="lazy">
+            <div class="ar-carousel__overlay">
+              <h3>Incontra le Farfalle da Vicino</h3>
+              <p>Nel mondo microscopico, le farfalle sono giganti gentili. Osserva le ali da una prospettiva mai vista prima.</p>
+            </div>
+          </div>
+          <div class="ar-carousel__slide">
+            <img src="assets/img/ar-3.webp" alt="Sentiero tra le piante di amaranto" loading="lazy">
+            <div class="ar-carousel__overlay">
+              <h3>Scopri un Mondo Nascosto</h3>
+              <p>Venature, cellule, strutture microscopiche: un paesaggio alieno che si nasconde dentro ogni pianta.</p>
+            </div>
+          </div>
+          <div class="ar-carousel__slide">
+            <img src="assets/img/ar-4.webp" alt="Il cielo visto attraverso gli steli" loading="lazy">
+            <div class="ar-carousel__overlay">
+              <h3>Guarda il Cielo tra i Fiori</h3>
+              <p>Alza lo sguardo tra gli steli dell'amaranto. Il cielo si trasforma in un mosaico di luce e colore.</p>
+            </div>
+          </div>
+          <div class="ar-carousel__slide">
+            <img src="assets/img/ar-5.webp" alt="Campo di amaranto con farfalle nella luce dorata" loading="lazy">
+            <div class="ar-carousel__overlay">
+              <h3>Esplora il Campo di Amaranto</h3>
+              <p>Un campo infinito di amaranto dorato, con farfalle che volano nella luce. Il momento piu magico dell'esperienza AR.</p>
+            </div>
+          </div>
+        </div>
+        <div class="ar-carousel__progress"></div>
+      </div>
+      <div class="ar-carousel__controls">
+        <button class="ar-carousel__arrow ar-carousel__arrow--prev" aria-label="Precedente"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="12 4 6 10 12 16"/></svg></button>
+        <div class="ar-carousel__dots">
+          <button class="ar-carousel__dot ar-carousel__dot--active" aria-label="Slide 1"></button>
+          <button class="ar-carousel__dot" aria-label="Slide 2"></button>
+          <button class="ar-carousel__dot" aria-label="Slide 3"></button>
+          <button class="ar-carousel__dot" aria-label="Slide 4"></button>
+          <button class="ar-carousel__dot" aria-label="Slide 5"></button>
+        </div>
+        <button class="ar-carousel__arrow ar-carousel__arrow--next" aria-label="Successivo"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="8 4 14 10 8 16"/></svg></button>
+      </div>
+      <a href="#prenota" class="btn btn--outline ar-carousel__cta">Prenota la Visita</a>
+    </div>
+  </section>
+
+  <!-- ============================================
+       BENEFITS (Perche l'Amaranto)
+       ============================================ -->
+  <section class="section" id="amaranto">
+    <div class="section__header">
+      <div class="section__pill">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="3" fill="currentColor"/></svg>
+        <span>Perche l'Amaranto</span>
+      </div>
+      <h2 class="section__title anim-split">
+        <span class="t-white">Non e solo un colore.</span>
+        <span class="t-dim">E arte, scienza e natura in un'unica pianta.</span>
+      </h2>
+    </div>
+    <div class="bento">
+      <div class="bento__card anim-up" style="--card-accent: #8A0253; --card-accent-glow: rgba(138, 2, 83, 0.08);">
+        <span class="bento__num" aria-hidden="true">01</span>
+        <svg class="bento__watermark" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 22l1-3 14-14 2 2L5 21l-3 1z"/><path d="M15 5l2-2 2 2-2 2"/></svg>
+        <h3 class="bento__title">Arte</h3>
+        <p class="bento__desc">Il suo pigmento crea colori naturali usati dagli artisti da secoli.</p>
+      </div>
+      <div class="bento__card anim-up" style="--delay: 0.08s; --card-accent: #2D6A4F; --card-accent-glow: rgba(45, 106, 79, 0.08);">
+        <span class="bento__num" aria-hidden="true">02</span>
+        <svg class="bento__watermark" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 10-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg>
+        <h3 class="bento__title">Botanica</h3>
+        <p class="bento__desc">Pianta resiliente e superfood, coltivata da migliaia di anni nel mondo.</p>
+      </div>
+      <div class="bento__card anim-up" style="--delay: 0.16s; --card-accent: #D4A017; --card-accent-glow: rgba(212, 160, 23, 0.08);">
+        <span class="bento__num" aria-hidden="true">03</span>
+        <svg class="bento__watermark" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-5"/></svg>
+        <h3 class="bento__title">Sostenibilita</h3>
+        <p class="bento__desc">Cresce con pochissima acqua. Il simbolo perfetto di un futuro verde.</p>
+      </div>
+      <div class="bento__card anim-up" style="--delay: 0.24s; --card-accent: #4B0082; --card-accent-glow: rgba(75, 0, 130, 0.08);">
+        <span class="bento__num" aria-hidden="true">04</span>
+        <svg class="bento__watermark" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <h3 class="bento__title">Educazione</h3>
+        <p class="bento__desc">Imparare senza accorgersene. Lo studio diventa gioco ed esplorazione.</p>
+      </div>
+      <div class="bento__card anim-up" style="--delay: 0.32s; --card-accent: #C44D2A; --card-accent-glow: rgba(196, 77, 42, 0.08);">
+        <span class="bento__num" aria-hidden="true">05</span>
+        <svg class="bento__watermark" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        <h3 class="bento__title">Comunita</h3>
+        <p class="bento__desc">Classi, insegnanti e famiglie insieme in un progetto che unisce.</p>
+      </div>
+      <div class="bento__card anim-up" style="--delay: 0.4s; --card-accent: #B5436B; --card-accent-glow: rgba(181, 67, 107, 0.08);">
+        <span class="bento__num" aria-hidden="true">06</span>
+        <svg class="bento__watermark" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        <h3 class="bento__title">Legame Affettivo</h3>
+        <p class="bento__desc">I ragazzi si affezionano alla loro pianta. La cura diventa responsabilita.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CAMPAGNA (Carousel)
+       ============================================ -->
+  <section class="section" id="campagna">
+    <div class="section__header">
+      <div class="section__pill">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="3" fill="currentColor"/></svg>
+        <span>La Campagna</span>
+      </div>
+      <h2 class="section__title anim-split">
+        <span class="t-white">Dal digitale alla citta.</span>
+        <span class="t-dim">Il Gioco di Colori arriva ovunque.</span>
+      </h2>
+    </div>
+    <div class="carousel" id="carousel">
+      <div class="carousel__track">
+        <div class="carousel__slide">
+          <div class="carousel__card">
+            <div class="carousel__image">
+              <img src="assets/img/mockup-billboard.webp" alt="Affissione su palazzo a Milano" loading="lazy">
+            </div>
+            <div class="carousel__body">
+              <h3>L'Impronta sulla Citta</h3>
+              <p>L'amaranto arriva sui palazzi di Milano. Un'impronta grande come un edificio.</p>
+              <span class="carousel__tag">Affissioni</span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel__slide">
+          <div class="carousel__card">
+            <div class="carousel__image">
+              <img src="assets/img/mockup-banner.webp" alt="Banner stradale con ragazzi e amaranto" loading="lazy">
+            </div>
+            <div class="carousel__body">
+              <h3>Incontri per Strada</h3>
+              <p>Due ragazzi e una pianta: il manifesto che racconta il progetto.</p>
+              <span class="carousel__tag">Street Banner</span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel__slide">
+          <div class="carousel__card">
+            <div class="carousel__image">
+              <img src="assets/img/mockup-magazine-new.webp" alt="Copie di Internazionale Kids sul tavolo" loading="lazy">
+            </div>
+            <div class="carousel__body">
+              <h3>In Edicola</h3>
+              <p>La copertina speciale di Internazionale Kids dedicata al Gioco di Colori.</p>
+              <span class="carousel__tag">Stampa</span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel__slide">
+          <div class="carousel__card">
+            <div class="carousel__image">
+              <img src="assets/img/mockup-poster-hand.webp" alt="Mano che regge il poster del progetto" loading="lazy">
+            </div>
+            <div class="carousel__body">
+              <h3>L'Arte in Mano</h3>
+              <p>Il manifesto del Gioco di Colori, pensato per essere tenuto, condiviso, portato ovunque.</p>
+              <span class="carousel__tag">Poster</span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel__slide">
+          <div class="carousel__card">
+            <div class="carousel__image">
+              <img src="assets/img/mockup-outdoor-wall.webp" alt="Poster esposto su parete esterna" loading="lazy">
+            </div>
+            <div class="carousel__body">
+              <h3>Sulla Strada</h3>
+              <p>L'impronta di amaranto appare sulle pareti della citta, dove la gente passa ogni giorno.</p>
+              <span class="carousel__tag">Outdoor</span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel__slide">
+          <div class="carousel__card">
+            <div class="carousel__image">
+              <img src="assets/img/mockup-outdoor-standee.webp" alt="Espositore del progetto sul marciapiede" loading="lazy">
+            </div>
+            <div class="carousel__body">
+              <h3>All'Ingresso</h3>
+              <p>Un invito a fermarsi. L'espositore accoglie i visitatori davanti alla Pinacoteca.</p>
+              <span class="carousel__tag">Outdoor</span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel__slide">
+          <div class="carousel__card">
+            <div class="carousel__image">
+              <img src="assets/img/mockup-iphone-instagram.webp" alt="Post Instagram della campagna" loading="lazy">
+            </div>
+            <div class="carousel__body">
+              <h3>Su Instagram</h3>
+              <p>L'impronta di amaranto diventa virale. La campagna vive nei feed di Instagram.</p>
+              <span class="carousel__tag">Social</span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel__slide">
+          <div class="carousel__card">
+            <div class="carousel__image">
+              <img src="assets/img/mockup-iphone-pinterest.webp" alt="Profilo Pinterest della campagna" loading="lazy">
+            </div>
+            <div class="carousel__body">
+              <h3>Su Pinterest</h3>
+              <p>Una bacheca di ispirazione. Tutte le immagini del progetto raccolte in un unico luogo.</p>
+              <span class="carousel__tag">Social</span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel__slide">
+          <div class="carousel__card">
+            <div class="carousel__image">
+              <img src="assets/img/mockup-iphone-youtube.webp" alt="Canale YouTube della Pinacoteca di Brera" loading="lazy">
+            </div>
+            <div class="carousel__body">
+              <h3>Su YouTube</h3>
+              <p>Il racconto video del progetto sul canale della Pinacoteca di Brera.</p>
+              <span class="carousel__tag">Social</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel__controls">
+        <button class="carousel__btn carousel__btn--prev" aria-label="Precedente">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M12 4l-6 6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="carousel__btn carousel__btn--next" aria-label="Successivo">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M8 4l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SPONSOR
+       ============================================ -->
+  <section class="section section--compact" id="sponsor">
+    <div class="section__header">
+      <div class="section__pill">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="3" fill="currentColor"/></svg>
+        <span>Partner</span>
+      </div>
+      <h2 class="section__title anim-split">
+        <span class="t-white">Con il supporto di</span>
+        <span class="t-dim">chi crede nella cultura e nella natura.</span>
+      </h2>
+    </div>
+    <div class="partners">
+      <div class="partner anim-up" style="--partner-accent: #8A0253; --partner-bg: #FDF5F8; --partner-border: rgba(138, 2, 83, 0.1);">
+        <span class="partner__initial" aria-hidden="true">F</span>
+        <span class="partner__name">FILA</span>
+        <span class="partner__role">Partner Tecnico</span>
+        <div class="partner__rule" aria-hidden="true"></div>
+        <p class="partner__desc">Materiali artistici per i laboratori creativi con i ragazzi.</p>
+      </div>
+      <div class="partner anim-up" style="--delay: 0.1s; --partner-accent: #2D6A4F; --partner-bg: #F3F9F6; --partner-border: rgba(45, 106, 79, 0.1);">
+        <span class="partner__initial" aria-hidden="true">H</span>
+        <span class="partner__name">Hera</span>
+        <span class="partner__role">Partner Commerciale</span>
+        <div class="partner__rule" aria-hidden="true"></div>
+        <p class="partner__desc">Per un futuro sostenibile. Energia e ambiente al servizio dell'arte.</p>
+      </div>
+      <div class="partner anim-up" style="--delay: 0.2s; --partner-accent: #D4A017; --partner-bg: #FBF8F0; --partner-border: rgba(212, 160, 23, 0.12);">
+        <span class="partner__initial" aria-hidden="true">W</span>
+        <span class="partner__name">WWF</span>
+        <span class="partner__role">Partner Istituzionale</span>
+        <div class="partner__rule" aria-hidden="true"></div>
+        <p class="partner__desc">Proteggere la natura, insieme. Credibilita e sostenibilita.</p>
+      </div>
+    </div>
+    <div class="sponsor-strip anim-up" style="--delay: 0.3s">
+      <span class="sponsor-strip__label">Con il patrocinio di</span>
+      <div class="sponsor-strip__logos">
+        <img src="assets/img/logo-ggi.webp" alt="Grandi Giardini Italiani" height="32">
+        <img src="assets/img/logo-reteorti.webp" alt="Rete Orti Botanici della Lombardia" height="28">
+        <img src="assets/img/logo-sbi.webp" alt="Societa Botanica Italiana" height="32">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FAQ
+       ============================================ -->
+  <section class="section" id="faq">
+    <div class="section__header">
+      <div class="section__pill">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="3" fill="currentColor"/></svg>
+        <span>FAQ</span>
+      </div>
+      <h2 class="section__title anim-split">
+        <span class="t-white">Le tue domande,</span>
+        <span class="t-dim">le nostre risposte.</span>
+      </h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-col">
+        <details class="faq">
+          <summary class="faq__q">A chi e rivolto il progetto?</summary>
+          <div class="faq__a"><p>Il Gioco di Colori e pensato per le scuole medie di Milano (ragazzi 11-13 anni). L'attivita e gratuita e si svolge tra l'Orto Botanico e le sale didattiche della Pinacoteca di Brera.</p></div>
+        </details>
+        <details class="faq">
+          <summary class="faq__q">Quanto dura il percorso?</summary>
+          <div class="faq__a"><p>Il percorso completo si sviluppa da gennaio a giugno 2027. Ogni classe partecipa a 4 fasi: coltivazione (gen-mar), estrazione del pigmento (aprile), pittura (maggio) e esposizione (giugno).</p></div>
+        </details>
+        <details class="faq">
+          <summary class="faq__q">Cosa serve per partecipare?</summary>
+          <div class="faq__a"><p>Niente! Tutti i materiali sono forniti dal progetto grazie al partner tecnico FILA. Basta prenotare la visita e portare la classe.</p></div>
+        </details>
+      </div>
+      <div class="faq-col">
+        <details class="faq">
+          <summary class="faq__q">L'ingresso e gratuito?</summary>
+          <div class="faq__a"><p>Si, l'ingresso e completamente gratuito per tutte le scuole medie. E necessaria la prenotazione obbligatoria tramite il modulo in fondo alla pagina.</p></div>
+        </details>
+        <details class="faq">
+          <summary class="faq__q">Cos'e l'esperienza AR?</summary>
+          <div class="faq__a"><p>Con un visore di realta aumentata, il ragazzo viene "miniaturizzato" sulla pianta di amaranto. Esplora le strutture cellulari e le venature come se fosse una formica su un paesaggio alieno.</p></div>
+        </details>
+        <details class="faq">
+          <summary class="faq__q">Come prenoto per la mia classe?</summary>
+          <div class="faq__a"><p>Compila il modulo di prenotazione in fondo a questa pagina con il nome della scuola, la classe, l'email dell'insegnante e il numero di studenti. Ti ricontatteremo entro 48 ore.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FINAL CTA
+       ============================================ -->
+  <section class="section section--cta" id="prenota">
+    <div class="cta">
+      <h2 class="cta__title anim-split">
+        <span class="t-white">Pronto a lasciare il tuo</span>
+        <span class="t-dim">segno a Brera?</span>
+      </h2>
+      <p class="cta__text">Coltiva, crea e la tua opera potrebbe entrare in un museo. Prenota la visita per la tua classe.</p>
+
+      <form class="cta__form" id="booking-form">
+        <div class="cta__fields">
+          <div class="cta__field">
+            <label for="school-name">Nome Scuola</label>
+            <input type="text" id="school-name" placeholder="Es. I.C. Manzoni" required>
+          </div>
+          <div class="cta__field">
+            <label for="class-name">Classe</label>
+            <input type="text" id="class-name" placeholder="Es. 2A" required>
+          </div>
+          <div class="cta__field">
+            <label for="teacher-email">Email Insegnante</label>
+            <input type="email" id="teacher-email" placeholder="nome@scuola.it" required>
+          </div>
+          <div class="cta__field">
+            <label for="student-count">Numero Studenti</label>
+            <input type="number" id="student-count" placeholder="Es. 25" min="1" max="35" required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn--primary btn--wide">Prenota la Visita</button>
+      </form>
+
+      <div class="cta__success" id="form-success" hidden>
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2"/><path d="M15 24l6 6 12-12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <p>Prenotazione inviata! Ti ricontatteremo entro 48 ore.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <div class="footer__brand">
+          <img src="assets/img/lockup-footer.webp" alt="Gioco di Colori — Internazionale Kids e Pinacoteca di Brera" class="footer__lockup">
+        </div>
+        <p class="footer__desc">Un'avventura tra arte, natura e colori. Pinacoteca di Brera, Milano. Gennaio – Giugno 2027.</p>
+        <div class="footer__logos">
+          <img src="assets/img/logo-brera-white.webp" alt="Brera" height="24">
+          <img src="assets/img/logo-kids.webp" alt="Internazionale Kids" height="24">
+        </div>
+      </div>
+      <div class="footer__right">
+        <span class="footer__label">Navigazione</span>
+        <a href="#about">Il Progetto</a>
+        <a href="#percorso">Percorso</a>
+        <a href="#ar">Esperienza AR</a>
+        <a href="#campagna">Campagna</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2027 Gioco di Colori — Pinacoteca di Brera. Progetto di Linguaggi Multimediali 2, Prof. Andrea Valente.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
